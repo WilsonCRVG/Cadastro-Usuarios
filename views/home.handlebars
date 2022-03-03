@@ -1,0 +1,12 @@
+<h1>=== LISTAS TITULOS E POSTAGENS : ===</h1>
+
+<a href="/cad/"><button>CADASTRAR</button></a>
+
+{{#each posts}}
+        <small>{{dataValues.createdAt}}</small>
+        <h1>{{dataValues.titulo}}</h1>
+        <p>{{dataValues.conteudo}}</p>
+        <a href="/deletar/{{dataValues.id}}"><button>Deletar</button></a>
+        <a href="/edit/{{dataValues.id}}"><button>Editar</button></a>
+        <hr>
+{{/each}}
